@@ -1,4 +1,4 @@
-    import html from '../core.js'
+import html from '../core.js'
 import { connect } from '../store.js'
 import TodoItem from './TodoItem.js'
 
@@ -6,6 +6,8 @@ import TodoItem from './TodoItem.js'
 const connector = connect()
 
 function TodoList({ todos, filters, filter  }) {
+/*    console.log(todos)
+    console.log("Killed logger, if you need it go to store.js and turn it on!")*/
     return html`
         <section class="main">
             <input 
